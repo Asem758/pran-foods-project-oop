@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="609.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PreparePeriodicReportsController">
+   <children>
+      <Label layoutX="223.0" layoutY="14.0" prefHeight="62.0" prefWidth="213.0" text="Creating 3 Shift.....">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="createButton" layoutX="447.0" layoutY="515.0" mnemonicParsing="false" onAction="#createButtonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Create" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="102.0" layoutY="143.0" prefHeight="27.0" prefWidth="121.0" text="Shift 1:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="184.0" prefHeight="27.0" prefWidth="76.0" text="Starting:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="222.0" prefHeight="27.0" prefWidth="32.0" text="Till:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="272.0" prefHeight="27.0" prefWidth="66.0" text="Shift 2:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="304.0" prefHeight="27.0" prefWidth="76.0" text="Starting:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="340.0" prefHeight="27.0" prefWidth="32.0" text="Till:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="startingCombobox" layoutX="223.0" layoutY="182.0" onAction="#selectstarting" prefWidth="150.0" />
+      <ComboBox fx:id="tillCombobox" layoutX="223.0" layoutY="222.0" onAction="#selectTill" prefWidth="150.0" />
+      <ComboBox fx:id="startingButton" layoutX="223.0" layoutY="302.0" onAction="#selectstarting" prefWidth="150.0" />
+      <ComboBox fx:id="tillCombobox" layoutX="223.0" layoutY="340.0" onAction="#selectTill" prefWidth="150.0" />
+      <Label layoutX="102.0" layoutY="399.0" prefHeight="27.0" prefWidth="66.0" text="Shift 2:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="436.0" prefHeight="27.0" prefWidth="76.0" text="Starting:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="478.0" prefHeight="27.0" prefWidth="32.0" text="Till:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="startingCombobox" layoutX="223.0" layoutY="434.0" onAction="#selectstarting" prefWidth="150.0" />
+      <ComboBox fx:id="tillCombobox" layoutX="223.0" layoutY="476.0" onAction="#selectTill" prefWidth="150.0" />
+   </children>
+</AnchorPane>

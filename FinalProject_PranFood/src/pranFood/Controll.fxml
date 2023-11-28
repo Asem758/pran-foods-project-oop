@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="675.0" prefWidth="916.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.ControllController">
+   <children>
+      <MenuBar layoutY="-2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField layoutX="14.0" layoutY="64.0" text="Food Cost:" />
+      <TextField layoutX="14.0" layoutY="112.0" text="Labour Cost:" />
+      <TextField layoutX="14.0" layoutY="165.0" text="Overhead Cost:" />
+      <TextField layoutX="14.0" layoutY="215.0" text="Time:" />
+      <TextField layoutX="14.0" layoutY="262.0" text="Value:" />
+      <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Food Cost" />
+      <Button layoutX="14.0" layoutY="405.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Labour Cost" />
+      <Button layoutX="14.0" layoutY="458.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Overhead Cost" />
+      <Button layoutX="14.0" layoutY="513.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Time Management" />
+    <Button layoutX="14.0" layoutY="560.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Tracking Earned Value" />
+      <Button layoutX="14.0" layoutY="616.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Budget" />
+      <Button layoutX="-292.0" layoutY="14.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="14.0" layoutY="307.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Save" />
+      <Button layoutX="300.0" layoutY="49.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="497.0" text="Click to view " />
+      <TextArea layoutX="273.0" layoutY="132.0" prefHeight="443.0" prefWidth="602.0" />
+      <Button layoutX="732.0" layoutY="616.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="147.0" text="Next" />
+   </children>
+</AnchorPane>

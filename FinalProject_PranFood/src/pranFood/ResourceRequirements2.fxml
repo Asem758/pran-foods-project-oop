@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="696.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PreparePeriodicReportsController">
+   <children>
+      <Label layoutX="170.0" layoutY="32.0" prefHeight="62.0" prefWidth="380.0" text="Report on Resource Requirement">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="134.0" style="-fx-background-color: yellow;" text="Requirement Type:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="525.0" layoutY="465.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Submit" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="laborTextField" layoutX="348.0" layoutY="235.0" prefHeight="31.0" prefWidth="218.0" promptText="No of Labor needed" />
+      <TextField fx:id="equipmentTextField" layoutX="348.0" layoutY="318.0" prefHeight="31.0" prefWidth="218.0" promptText="Equipment &amp; Tools Name" />
+      <TextField fx:id="consumableTextField" layoutX="348.0" layoutY="277.0" prefHeight="31.0" prefWidth="218.0" promptText="Name of Consumables &amp; materials" />
+      <TextField fx:id="budgetTextField" layoutX="348.0" layoutY="191.0" prefHeight="31.0" prefWidth="218.0" promptText="Budget needed" />
+      <RadioButton fx:id="financeRadioButton" layoutX="93.0" layoutY="193.0" mnemonicParsing="false" onAction="#selectFinance" text="Finance">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="manpowerRadioButton" layoutX="93.0" layoutY="237.0" mnemonicParsing="false" onAction="#selectManpower" text="Manpower">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="consumablesandmaterialsRadioButton" layoutX="92.0" layoutY="279.0" mnemonicParsing="false" onAction="#selectconsumablesandmaterials" text="Consumables &amp; materials">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="equipmentandToolsRadioButton" layoutX="92.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectEquipmentandTools" text="Equipment &amp; Tools">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

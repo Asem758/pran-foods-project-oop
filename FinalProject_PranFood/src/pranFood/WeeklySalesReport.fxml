@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="782.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PreparePeriodicReportsController">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" prefHeight="62.0" prefWidth="257.0" text="Weekly Sales Activity">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="106.0" text="Number of the week:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="150.0" prefHeight="27.0" prefWidth="66.0" text="Month:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="313.0" text="Revenue:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="602.0" layoutY="413.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Submit" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="176.0" layoutY="189.0" prefHeight="27.0" prefWidth="49.0" text="Year:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="salesVolumeTextField" layoutX="257.0" layoutY="229.0" prefHeight="31.0" prefWidth="218.0" />
+      <Label layoutX="105.0" layoutY="231.0" prefHeight="27.0" prefWidth="124.0" text="Sales Volume:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="273.0" prefHeight="27.0" prefWidth="152.0" text="Expense Amount:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="numberofweeksCombobox" layoutX="257.0" layoutY="104.0" onAction="#selectnoofweeks" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="monthCombobox" layoutX="257.0" layoutY="148.0" onAction="#selectMonth" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="yearCombobox" layoutX="257.0" layoutY="187.0" onAction="#selectYear" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="expernseAmountTextField" layoutX="257.0" layoutY="271.0" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="revenueTextField" layoutX="257.0" layoutY="311.0" prefHeight="31.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>

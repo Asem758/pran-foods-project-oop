@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="602.0" prefWidth="945.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.PlanningandDevelopingController">
+   <children>
+      <MenuBar layoutY="-2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField layoutX="25.0" layoutY="44.0" text="Menue Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="25.0" layoutY="88.0" text="Menue Type:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="25.0" layoutY="291.0" text="Ingradient Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <DatePicker layoutX="25.0" layoutY="137.0" prefHeight="31.0" prefWidth="210.0" promptText="Menue Date" />
+      <TextField layoutX="25.0" layoutY="346.0" text="Ingradient Quality:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <ComboBox layoutX="25.0" layoutY="187.0" prefHeight="31.0" prefWidth="210.0" promptText="Goods Location" />
+      <ComboBox layoutX="25.0" layoutY="239.0" prefHeight="31.0" prefWidth="210.0" promptText="Season" />
+      <Button layoutX="31.0" layoutY="415.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="192.0" text="Menue Planning">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="478.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="192.0" text="Design and Devolopment">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="368.0" layoutY="37.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="477.0" text="Click to view Planning and Devolopment Info">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="335.0" layoutY="129.0" prefHeight="369.0" prefWidth="572.0" />
+      <ButtonBar layoutX="507.0" layoutY="498.0" prefHeight="40.0" prefWidth="200.0" />
+    <Button layoutX="756.0" layoutY="545.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="127.0" text="Next">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

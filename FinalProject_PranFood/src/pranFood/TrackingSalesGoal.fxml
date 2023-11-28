@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="751.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PreparePeriodicReportsController">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" prefHeight="62.0" prefWidth="235.0" text="Tracking Sales Goal">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="106.0" text="Goals Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="236.0" text="\% of Progress:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="150.0" prefHeight="27.0" prefWidth="122.0" text="Staring Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="276.0" text="Revenue:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="goalsnameTextField" layoutX="257.0" layoutY="104.0" prefHeight="31.0" prefWidth="218.0" />
+      <Button fx:id="closeButton" layoutX="593.0" layoutY="333.0" mnemonicParsing="false" onAction="#closeButtonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Close" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="102.0" layoutY="189.0" prefHeight="27.0" prefWidth="131.0" text="Finishing Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startingdate" layoutX="260.0" layoutY="148.0" onAction="#setdate" />
+      <DatePicker fx:id="finishinfdate" layoutX="260.0" layoutY="187.0" onAction="#tillDate" />
+      <TextField fx:id="parcentageofprogressTextField" layoutX="260.0" layoutY="232.0" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="reveueparcentageofprogressTextField" layoutX="260.0" layoutY="272.0" prefHeight="31.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>

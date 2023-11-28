@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField alignment="CENTER" editable="false" layoutX="14.0" layoutY="9.0" prefHeight="56.0" prefWidth="378.0" style="-fx-background-color: green; -fx-font-style: green;">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="120.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leader Board">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <TextField layoutX="52.0" layoutY="274.0" prefHeight="26.0" prefWidth="307.0" text="4. Name" />
+      <TextField layoutX="52.0" layoutY="308.0" prefHeight="26.0" prefWidth="307.0" text="6. Name" />
+      <ImageView fitHeight="69.0" fitWidth="84.0" layoutX="103.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="84.0" layoutX="233.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="84.0" layoutX="167.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/profile.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="126.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="198.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="264.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="135.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField alignment="CENTER" layoutX="14.0" layoutY="65.0" prefHeight="26.0" prefWidth="378.0" text="SUPER HERO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="182.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="251.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <TextField layoutX="52.0" layoutY="341.0" prefHeight="26.0" prefWidth="307.0" text="7. Name" />
+      <TextField layoutX="54.0" layoutY="375.0" prefHeight="26.0" prefWidth="307.0" text="8. Name" />
+      <TextField layoutX="53.0" layoutY="408.0" prefHeight="26.0" prefWidth="307.0" text="9. Name" />
+      <TextField layoutX="53.0" layoutY="445.0" prefHeight="26.0" prefWidth="307.0" text="10. Name" />
+   </children>
+</AnchorPane>

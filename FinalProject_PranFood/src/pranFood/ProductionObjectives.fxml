@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="738.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PreparePeriodicReportsController">
+   <children>
+      <Label layoutX="223.0" layoutY="14.0" prefHeight="62.0" prefWidth="379.0" text="Report  on Production Objectives">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="104.0" text="Reporting Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="148.0" text="Project Goals:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="232.0" text="Action Type:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="reportingDatePicker" layoutX="238.0" layoutY="102.0" onAction="#selectdate" />
+      <TextArea fx:id="previewTextArea" layoutX="180.0" layoutY="494.0" prefHeight="200.0" prefWidth="350.0" />
+      <Button fx:id="planpreviewButton" layoutX="33.0" layoutY="594.0" mnemonicParsing="false" onAction="#planpreviewButtonOnClick" text="Plan Preview">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitButton" layoutX="565.0" layoutY="641.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Submit" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="104.0" layoutY="276.0" prefHeight="27.0" prefWidth="121.0" text="Action Steps:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="187.0" prefHeight="27.0" prefWidth="165.0" text="Project Objectives:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="projectgoalsTextField" layoutX="238.0" layoutY="148.0" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="ProjectObjectibeTextField" layoutX="238.0" layoutY="185.0" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="actionTypeCombobox" layoutX="238.0" layoutY="230.0" onAction="#selectActionType" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="stepOneTexTfield" layoutX="238.0" layoutY="274.0" prefHeight="31.0" prefWidth="218.0" promptText="step 1" />
+      <TextField fx:id="steptwoTexTfield" layoutX="238.0" layoutY="312.0" prefHeight="31.0" prefWidth="218.0" promptText="step 2" />
+      <TextField fx:id="stepThreeTexTfield" layoutX="238.0" layoutY="352.0" prefHeight="31.0" prefWidth="218.0" promptText="step 3" />
+      <TextField fx:id="stepFourTexTfield" layoutX="238.0" layoutY="391.0" prefHeight="31.0" prefWidth="218.0" promptText="step 4" />
+      <TextField fx:id="stepFiveTexTfield" layoutX="238.0" layoutY="431.0" prefHeight="31.0" prefWidth="218.0" promptText="step 5" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="640.0" prefWidth="873.0" />
+      <AnchorPane id="AnchorPane" layoutY="1.0" prefHeight="631.0" prefWidth="884.0">
+         <children>
+            <TextField alignment="CENTER" editable="false" layoutX="28.0" layoutY="19.0" prefHeight="56.0" prefWidth="378.0" style="-fx-background-color: green; -fx-font-style: green;">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </TextField>
+            <Text layoutX="53.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We’re available in 145 countries and striving to build a better, brighter and healthier world." wrappingWidth="337.2510070800781">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <TextField layoutX="54.0" layoutY="187.0" prefHeight="173.0" prefWidth="150.0" style="-fx-background-color: green;" />
+            <TextField layoutX="237.0" layoutY="187.0" prefHeight="173.0" prefWidth="150.0" style="-fx-background-color: orange;" />
+            <TextField layoutX="53.0" layoutY="385.0" prefHeight="173.0" prefWidth="150.0" style="-fx-background-color: black;" />
+            <TextField layoutX="239.0" layoutY="384.0" prefHeight="173.0" prefWidth="150.0" style="-fx-background-color: blue;" />
+            <ImageView fitHeight="106.0" fitWidth="101.0" layoutX="83.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/global-regions_0%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="263.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/achievements.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="112.0" fitWidth="106.0" layoutX="80.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/achievements.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="261.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/history-overseas.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="83.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Global Footprint">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="273.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Achievements">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="266.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History Overseas ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="81.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explored Markets">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="133.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Global Reach ">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

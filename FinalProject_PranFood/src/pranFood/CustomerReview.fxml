@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="784.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PreparePeriodicReportsController">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" prefHeight="62.0" prefWidth="235.0" text="Customer Review">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="customerReviewTextArea" layoutX="282.0" layoutY="121.0" prefHeight="190.0" prefWidth="394.0" />
+      <Button fx:id="closeButton" layoutX="617.0" layoutY="465.0" mnemonicParsing="false" onAction="#closebuttonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Close" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="79.0" layoutY="156.0" text="See Customer Review:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="notifyToSalesRepresentativeButton" layoutX="79.0" layoutY="330.0" mnemonicParsing="false" onAction="#notifyToSalesRepresentativeButtonOnClick" text="Notify to Sales Representative">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="notifyFoodProductionManagerButton" layoutX="400.0" layoutY="330.0" mnemonicParsing="false" onAction="#notifyFoodProductionManagerButtonOnClick" text="Notify to Food Production Manager">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

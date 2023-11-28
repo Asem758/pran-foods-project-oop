@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="774.0" style="-fx-background-color: skyblue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="pranFood.CreateWorkShift4Controller">
+   <children>
+      <Label layoutX="39.0" layoutY="166.0" prefHeight="120.0" prefWidth="704.0" text="A new working shift proposal has been taken successfully........">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

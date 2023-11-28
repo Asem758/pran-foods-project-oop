@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="756.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.FoodProductionManagerDashboardController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="551.0" prefWidth="189.0" style="-fx-background-color: red;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button layoutX="12.0" layoutY="138.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: skyblue;" text="Daily Operations">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: skyblue;" text="Analysis &amp; Create Report">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: skyblue;" text="Determine Price Schedule">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="41.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: skyblue;" text="Generate leads Among SR">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="72.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="183.0" style="-fx-background-color: skyblue;" text="Allocate sales activities">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="22.0" layoutY="481.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="191.0" style="-fx-background-color: black;" text="View Profile" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="320.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: black;" text="Logout" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="37.0" layoutY="111.0" prefHeight="40.0" prefWidth="516.0" text="What type of activity you wants to allocate?">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="localOption" layoutX="70.0" layoutY="173.0" mnemonicParsing="false" onAction="#LocalOnClick" text="Local">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="regionalOption" layoutX="70.0" layoutY="215.0" mnemonicParsing="false" onAction="#regionalOnClick" text="Regional">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="nextButton" layoutX="469.0" layoutY="521.0" mnemonicParsing="false" onAction="#nextButtonOnClick" style="-fx-background-color: black;" text="Next" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

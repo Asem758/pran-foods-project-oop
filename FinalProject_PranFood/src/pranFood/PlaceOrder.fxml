@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="782.0" prefWidth="796.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PlaceOrderController">
+   <children>
+      <Label layoutX="185.0" layoutY="80.0" text="Order ID:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="117.0" text="Order Date:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="237.0" text="Product ID:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="158.0" prefHeight="21.0" prefWidth="106.0" text="Product Brand:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="273.0" text="Quantity:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="309.0" text="Unit Cost:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="346.0" text="Subtotal:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="382.0" text="Payment Status:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="424.0" text="Shipment Date:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="OrderDatePicker" layoutX="277.0" layoutY="112.0" onAction="#selectdate" />
+      <TextField fx:id="orderIDTextField" layoutX="277.0" layoutY="75.0" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="productbrandcombobox" layoutX="277.0" layoutY="153.0" onAction="#selectProductBrand" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="productIDCombobox" layoutX="276.0" layoutY="232.0" onAction="#selectproductID" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="quantityTextField" layoutX="276.0" layoutY="268.0" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="unitcostTextField" layoutX="277.0" layoutY="304.0" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="subtotalTextField" layoutX="277.0" layoutY="341.0" prefHeight="31.0" prefWidth="218.0" />
+      <RadioButton fx:id="paidRadioButton" layoutX="277.0" layoutY="382.0" mnemonicParsing="false" onAction="#selectPaid" text="Paid" />
+      <RadioButton fx:id="dueRadioButton" layoutX="386.0" layoutY="382.0" mnemonicParsing="false" onAction="#selectDue" text="Due" />
+      <DatePicker fx:id="shipmentdatepicker" layoutX="274.0" layoutY="419.0" onAction="#selectdate" />
+      <Button fx:id="submitButton" layoutX="618.0" layoutY="681.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Submit" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="selectproducttype" layoutX="276.0" layoutY="193.0" onAction="#selectProductType" prefHeight="31.0" prefWidth="218.0" />
+      <Label layoutX="149.0" layoutY="198.0" prefHeight="21.0" prefWidth="106.0" text="Product Type:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="addproductButton" layoutX="282.0" layoutY="477.0" mnemonicParsing="false" onAction="#addproductButtonOnClick" text="Add Product to Order List">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="previewOrderButton" layoutX="114.0" layoutY="619.0" mnemonicParsing="false" onAction="#previewOrderButtonOnClick" text="Preview Order">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="previewTextArea" layoutX="251.0" layoutY="534.0" prefHeight="200.0" prefWidth="243.0" />
+      <Label layoutX="305.0" layoutY="14.0" prefHeight="62.0" prefWidth="320.0" text="Place Order">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

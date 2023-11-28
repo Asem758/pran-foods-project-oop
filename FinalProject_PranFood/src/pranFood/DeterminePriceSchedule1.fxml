@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="717.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranFood.PreparePeriodicReportsController">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" prefHeight="62.0" prefWidth="263.0" text="Update Product Price">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="106.0" text="Reporting Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="272.0" text="Current unit price:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="150.0" prefHeight="27.0" prefWidth="135.0" text="Product Brand:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="317.0" text="Set Discount:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="mydatePicker" layoutX="257.0" layoutY="104.0" onAction="#selectDate" />
+      <ComboBox fx:id="productBrandCombobox" layoutX="257.0" layoutY="146.0" onAction="#selectProductBrand" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="productTypeCombobox" layoutX="260.0" layoutY="187.0" onAction="#selectProductType" prefHeight="31.0" prefWidth="218.0" />
+      <TextField fx:id="currentUnitePriceTextField" layoutX="260.0" layoutY="270.0" prefHeight="31.0" prefWidth="218.0" />
+      <Button fx:id="submitButton" layoutX="541.0" layoutY="465.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: black;" text="Submit" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="117.0" layoutY="189.0" prefHeight="27.0" prefWidth="121.0" text="Product Type:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="231.0" prefHeight="27.0" prefWidth="103.0" text="Product ID:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="productIDCombobox" layoutX="260.0" layoutY="227.0" onAction="#SELECTpRODUCTid" prefHeight="31.0" prefWidth="218.0" />
+      <Label layoutX="108.0" layoutY="356.0" text="\% of Discount:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="yesRadioButton" layoutX="260.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectYes" text="Yes">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="noRadioButton" layoutX="344.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectNo" text="No">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="parcentageofdiscountTextField" layoutX="260.0" layoutY="354.0" prefHeight="31.0" prefWidth="218.0" />
+      <Label layoutX="142.0" layoutY="393.0" text="New Price:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newpriceTextField" layoutX="260.0" layoutY="391.0" prefHeight="31.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>

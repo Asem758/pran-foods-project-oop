@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="907.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.FoodControllingManagerDefaultSceneController">
+   <children>
+      <Label fx:id="HeadLineLabel" layoutX="-1.0" layoutY="-2.0" prefHeight="105.0" prefWidth="907.0" style="-fx-background-color: YELLOW;" text="Simulating operations of a Food processing plant such as Pran Foods">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="66.0" endY="493.0" layoutX="115.0" layoutY="125.0" startX="66.0" startY="-22.0" />
+      <Button layoutX="15.0" layoutY="131.0" mnemonicParsing="false" onAction="#HomeButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Home">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="195.0" mnemonicParsing="false" onAction="#PlanningandDevelopmentButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Planning and Developing">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="255.0" mnemonicParsing="false" onAction="#ControllButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Controll">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="316.0" mnemonicParsing="false" onAction="#MonitoringButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Monitoring">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="379.0" mnemonicParsing="false" onAction="#MenegerialButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Manegerial">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="436.0" mnemonicParsing="false" onAction="#TrainingButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Training">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="15.0" layoutY="496.0" mnemonicParsing="false" onAction="#ProfileButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Profile">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="15.0" layoutY="558.0" mnemonicParsing="false" onAction="#SignOutButtonOnClick" prefHeight="31.0" prefWidth="152.0" text="Sign Out">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="722.0" layoutY="132.0" prefHeight="29.0" prefWidth="176.0" text="My Account">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="690.0" layoutY="186.0" prefHeight="40.0" prefWidth="196.0" text="Change Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
