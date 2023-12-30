@@ -47,9 +47,9 @@ The Pran Foods software system represents a pivotal asset in elevating the opera
 
 ## Usage
 
-- **Using the Pran Foods Software System**
+**Using the Pran Foods Software System**
   
-1. Logging In:
+**1. Logging In:**
    
 Upon launching the application, users are prompted to log in using their credentials.
 Use the provided username and password for demonstration purposes or create new user profiles if applicable.
