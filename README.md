@@ -33,7 +33,7 @@ The Pran Foods software system represents a pivotal asset in elevating the opera
 
 ## Technologies Used
 
-- **Java:** [JDK 1.0]
+- **Java:** [Java SE 21]
 - **Database:** [MySQL]
 - **GUI Framework:** [JavaFX]
 - **Others:** [Lucidchart]
